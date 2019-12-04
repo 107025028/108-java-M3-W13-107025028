@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class a2 {
+public class M3Q2 {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         Random re = new Random();
@@ -12,18 +12,23 @@ public class a2 {
         while (i < 6) {
             a = true;
             da[i] = re.nextInt(42) + 1;
-            for (int j = 0; j < i; j++) {
-                if (da[j] == da[i]) {
+            for (int j = 0; j < i; j++) 
+            {
+                if (da[j] == da[i]) 
+                {
                     a = false;
                     break;
                 }
-                if (a == true) {
+              
+
+                } 
+            if (a == true) 
+            {
                     System.out.print(da[i]);
                     i++;
 
-                }
             }
-
-        }
+                }  
+       
     }
 }
